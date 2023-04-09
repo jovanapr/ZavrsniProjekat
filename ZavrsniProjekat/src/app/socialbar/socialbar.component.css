@@ -1,0 +1,15 @@
+.socialicons {
+    width: 20px;
+    height: 20px;
+    font-size: small;
+    padding-top: 5px;
+}
+
+.socialbar {
+
+    width: 25px;
+    position: fixed;
+    top: 70%;
+    right: 0;
+
+}

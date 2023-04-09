@@ -1,0 +1,57 @@
+.background {
+    background-image: url("../../assets/flowerBackground1.jpg");
+    background-size: cover;
+    height: 600px;
+
+
+}
+
+.btn1 {
+    border-radius: 5px;
+    font-size: small;
+}
+
+.p1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.flowers {
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.btn1 {
+    font-size: smaller;
+
+
+}
+
+.flowerbackground {
+    background-image: url("../../assets/FTD_SplitBanner_Merx_1.png");
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+}
+
+.pinkbackground {
+    height: 350px;
+    background-color: rgb(228, 149, 176);
+    display: grid;
+    align-items: center;
+    text-align: center;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+.newsletters {
+    display: flex;
+    align-items: last baseline;
+
+}
+
+.btn5 {
+    height: 25px;
+}
