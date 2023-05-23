@@ -1,0 +1,45 @@
+<div class="container">
+    <div class="singup-container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-4 col-sm-4 mt-2">
+                <form (ngSubmit)="onSubmit(singForm)" #singForm="ngForm">
+                    <div>
+                        <h4 class="text-center mb-0">Sing Up</h4>
+                    </div>
+                    <div class="form-group">
+                        <label class="formText mt-3" for="fname">First Name</label>
+                        <input id="fname" type="text" class="form-control" minlength="5" ngModel name="fname" required
+                            fname #fname="ngModel">
+                        <span class="help-block" *ngIf="!fname.valid && fname.touched">Name is required.</span>
+                    </div>
+                    <div class="form-group">
+                        <label class="formText" for="lname">Last Name</label>
+                        <input id="lname" type="text" class="form-control" minlength="5" ngModel name="lname" required
+                            lname #lname="ngModel">
+                        <span class="help-block" *ngIf="!lname.valid && lname.touched">Surname is required.</span>
+                    </div>
+                    <div class="form-group">
+                        <label class="formText mt-3" for="email">Email</label>
+                        <input id="email" type="email" class="form-control" ngModel name="email" required email
+                            #email="ngModel">
+                        <span class="help-block" *ngIf="!email.valid && email.touched">Email is required.</span>
+                    </div>
+                    <div class="form-group">
+                        <label class="formText" for="password">Password</label>
+                        <input id="password" type="password" class="form-control" minlength="5" ngModel name="password"
+                            required password #password="ngModel">
+                        <span class="help-block" *ngIf="!password.valid && password.touched">Password is
+                            required.</span>
+                    </div>
+                    <div>
+                        <p class="formText mt-5 mb-0">Forgot your password?</p>
+                        <button class="mt-2 border-0 singupBtn px-5 py-1 w-100" type="submit"
+                            [disabled]="!singForm.valid">Sing Up</button>
+                        <p class="member text-center">Alredy a member?<button class="border-0 logbtn"
+                                (click)="loadLogin()">Log In</button></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

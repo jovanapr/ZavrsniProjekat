@@ -1,0 +1,14 @@
+.background {
+    background-image: url(../../../assets/MACRO_PLP_BANNER.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.mainparagraf {
+    font-weight: 300;
+}
+
+.wrapper {
+    border-radius: 20px;
+}

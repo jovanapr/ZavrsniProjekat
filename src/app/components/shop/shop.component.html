@@ -1,0 +1,28 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-3 px-1 text-center" *ngFor="let cat of categories">
+            <div class="category-container" (click)="selectCategory(cat.id)">
+                <p class="px-1">{{cat.name}}</p>
+                <img class="category w-50" src={{cat.imgSrc}}>
+
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3 d-flex justify-content-center">
+            <div class="line w-50"></div>
+        </div>
+        <div class="col-3 d-flex justify-content-center">
+            <div class="line w-50"></div>
+        </div>
+        <div class="col-3 d-flex justify-content-center">
+            <div class="line w-50"></div>
+        </div>
+        <div class="col-3 d-flex justify-content-center">
+            <div class="line w-50"></div>
+        </div>
+    </div>
+
+</div>
+
+<router-outlet></router-outlet>

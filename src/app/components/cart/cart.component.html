@@ -1,0 +1,25 @@
+<div class="container">
+
+  <div class="row pt-4" *ngFor="let item of items">
+
+    <div class="col-lg-6 d-flex">
+      <img [src]="item.imgSrc" alt="" class="img-fluid w-25 h-100">
+      <div class="">
+        <p class="px-1">{{item.name}}</p>
+        <button class="pt-4 px-1">Remove</button>
+      </div>
+    </div>
+    <div class="col-lg-2 col-sm-4">
+      <p>{{item.price}}$</p>
+    </div>
+    <div class="col-lg-2 col-sm-4 ">
+      <input [(ngModel)]="item.quantity" type="number" id="quantity" name="quantity"><br>
+    </div>
+    <div class="col-lg-2 col-sm-4">
+      <p>{{item.price * item.quantity}}$</p>
+    </div>
+    <hr class="mt-2">
+
+  </div>
+
+</div>

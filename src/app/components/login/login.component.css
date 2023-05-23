@@ -1,0 +1,39 @@
+.login-container {
+   background-image: url(../../../assets/loginBackground.jpg);
+   background-size: cover;
+   background-position: center;
+   height: 100vh;
+   display: grid;
+   align-items: center;
+}
+
+input {
+   font-size: small;
+}
+
+.loginText {
+   font-size: xx-small;
+}
+
+.sing {
+   text-decoration: underline;
+   background-color: rgb(221, 248, 239);
+}
+
+.formText {
+   font-size: x-small;
+}
+
+.loginBtn {
+   font-size: small;
+
+}
+
+input.ng-invalid.ng-touched {
+   border: 1px solid red;
+}
+
+.help-block {
+   color: red;
+   font-size: 10px;
+}

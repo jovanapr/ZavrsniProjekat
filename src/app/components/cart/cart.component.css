@@ -1,0 +1,13 @@
+button {
+    border: none;
+    background-color: transparent;
+}
+
+input {
+    width: 40px;
+}
+
+.line {
+    height: 2px;
+    background-color: black;
+}
